@@ -1,0 +1,12 @@
+li{
+    display: inline;
+}
+
+nav{
+    background-color: cadetblue;
+    padding: 12px;
+}
+
+nav a {
+    color: cornsilk;
+}

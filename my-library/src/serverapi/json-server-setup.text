@@ -1,0 +1,21 @@
+1) create a folder eg-serverapi 
+2) Go to that folder using cd in command prompt/terminal. cd server api
+3) Execute the command => 
+npm init -y
+
+(this will create package.json)
+
+4) Install json-server => 
+npm install -g json-server 
+(this will create a node modules folder) 
+
+5)create your own db.json file in the folder 
+
+6) In the package.json file add the "start" entry => 
+"scripts": {
+    "start": "json-server -port 3002 --watch db.json" 
+}
+
+7) you can run the server using "npm start" in one terminal 
+
+8)Go to new terminal and run your react project/ react application
