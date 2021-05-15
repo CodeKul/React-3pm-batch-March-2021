@@ -54,6 +54,39 @@ export default function EditBook() {
                     placeholder="Enter the Book Name"
                     onChange={handleInputChange} />
                     </div>
+
+
+                    <div className="mb-3">
+                    <label htmlFor="" className="form-label">Author Name</label>
+                    
+                    <input type="text"
+                    className="form-control"
+                    name="authorName"
+                    value={updatebook.authorName}
+                    placeholder="Enter the Author Name"
+                    onChange={handleInputChange} />
+
+                    </div>
+
+
+                    <div className="mb-3">
+                    <label htmlFor="" className="form-label">Rating</label>
+                    
+                    <input type="text"
+                    className="form-control"
+                    name="rating"
+                    value={updatebook.rating}
+                    placeholder="Enter the rating (out of 5)"
+                    onChange={handleInputChange} />
+                    </div>
+
+
+                    <div className="mb-3">
+                        <button className="btn btn-dark"
+                        onClick={updateBook}>
+                            Update Book
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>

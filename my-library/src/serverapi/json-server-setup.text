@@ -13,7 +13,7 @@ npm install -g json-server
 
 6) In the package.json file add the "start" entry => 
 "scripts": {
-    "start": "json-server -port 3002 --watch db.json" 
+    "start": "json-server --port 3002 --watch db.json" 
 }
 
 7) you can run the server using "npm start" in one terminal 
