@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import {BookContext} from "./BookContext"
 
 export default function AddBook() {
 
@@ -33,12 +34,14 @@ export default function AddBook() {
                 name="bookName"
                 value={bookName}
                 onChange={addBookName}
+                placeholder="Add Book Name"
                  />
 
                 <input type="text"
                 name="price"
                 value={price}
                 onChange={addPrice}
+                placeholder="Add Book Price"
                  />
 
 
