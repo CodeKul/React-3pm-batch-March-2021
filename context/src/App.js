@@ -8,6 +8,7 @@ import "./styles.css";
 import ComponentA from "./components/ComponentA";
 import ComponentB from "./components/ComponentB";
 import Counter from "./components/USEReducer/Counter";
+import ReducerEx from "./components/USEReducer/ReducerEx";
 
 export default function App() {
 const [myName, setMyName] = useState("SRK")
@@ -24,6 +25,8 @@ const [myName, setMyName] = useState("SRK")
       </BookProvider> */}
 
       <Counter/>
+
+      <ReducerEx/>
     </div>
   );
 }
