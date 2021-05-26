@@ -1,39 +1,20 @@
-import {useState} from "react";
+import * as actions from '../actions/postActions'
 
-import * as actions from "../actions/postsActions"
-
-// export const [intialState, setInitialState] = useState(
-//     {
-
-//         posts: [],
-//         loading: false,
-//         hasErrors: false
-//     }    
-// )
-
-
-export const initialState =
-    {
-
-        posts: [],
-        loading: false,
-        hasErrors: false,
-    }    
-
-
+export const initialState = {
+  loading: true,
+  hasErrors: false,
+  post: {},
+}
 
 export default function postReducer(state = initialState, action) {
-    
-    switch (action.type) {
-
-        case actions.GET_POSTS:
-            return {...state, loading:true}
-        case actions.GET_POSTS_SUCCESS:
-            return {posts: action.payload, loading:false, hasErrors:false}
-
-            case actions.GET_POSTS_FAILURE:
-                return {...state, loading: false, hasErrors:Error}
-        default:
-            return state;
-    }
-};
+  switch (action.type) {
+    case actions.GET_POST:
+      return { ...state, loading: true }
+    case actions.GET_POST_SUCCESS:
+      return { post: action.payload, loading: false, hasErrors: false }
+    case actions.GET_POST_FAILURE:
+      return { ...state, loading: false, hasErrors: true }
+    default:
+      return state
+  }
+}
