@@ -46,10 +46,33 @@ export default function ImageCard({place, checked}) {
                 <CardMedia
                 className={classes.media}
                 image={place.imageUrl}
-                title="Contemplstive Reptile"/>
+                title="Contemplative Reptile"/>
+
+                <CardContent>
+                    <Typography 
+                    gutterBottom
+                    variant="h5"
+                    component="h1"
+                    className={classes.title}>
+
+                        {place.title}
+                    </Typography>
+
+
+
+                    <Typography 
+                  
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                    className={classes.desc}>
+
+                        {place.description}
+                    </Typography>
+                </CardContent>
                 
 
                 </Card>
         </Collapse>
-    )
+    );
 }

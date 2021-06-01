@@ -8,7 +8,7 @@ import SortIcon from "@material-ui/icons/Sort"
 
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 
-import {Lonk as Scroll} from "react-scroll"
+import {Link as Scroll} from "react-scroll"
 
 
 const useStyles = makeStyles((theme) =>({
